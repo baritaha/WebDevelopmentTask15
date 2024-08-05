@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./game.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Gmae XO</title>
+</head>
+<body>
+    <header class="head">
+        <div class="logo">
+            <img src="./images/xo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./slider.html" target="_blank">Slider</a></li>
+                <li><a href="./game.html" target="_blank">Game</a></li>
+                <li><a href="./clock.html" target="_blank">Clock</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="game">
+        <div class="board" id="board">
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+            <div class="cell" data-cell></div>
+        </div>
+        <div class="winning-message" id="winningMessage">
+            <div data-winning-messages-text>X Wins!</div>
+            <button id="restartButton">Restart</button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            &copy; 2024 <a href="https://baritaha.github.io/abdel-bari-website/Myweb.html" target="_blank">Abdle-bari altaha</a>
+        </div>
+    </footer>
+    <script src="./game.js"></script>
+</body>
+</html>

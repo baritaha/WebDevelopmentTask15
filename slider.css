@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+   background: linear-gradient(45deg,#F17C58,#E94584,#24AADb,#FFDC18,#FF3706);
+   background-size: 600% 100%;
+   animation: gradiant 15s linear infinite;
+   animation-duration: alternate;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+@keyframes gradiant {
+    0%{
+        background-position: 0% ;
+
+    }
+    100%{
+        background-position: 100%;
+    }
+
+}
+header{
+    width: 100%;
+align-items: center;
+justify-content: space-between;
+display: flex;
+background: transparent;
+/*background: linear-gradient(130deg,green,yellowGreen);*/
+padding: 10px 20px;
+left: 0;
+top: 0;
+
+}
+.head{
+    transition: background 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+.head.showbar{
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(130deg,green,yellowGreen);
+    transition: background 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    margin-right: 350px;
+}
+ul li{
+    margin:  15px;
+
+}
+ul li a{
+    text-decoration: none;
+    color: green;  
+    padding: 8px 12px;
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+}
+ul .active,
+ul li a:hover{
+    color: white;
+    background-color: green;
+    transition: 0.3s ease-in-out;
+  
+}
+/******************************************************Footer******************************************************/
+footer {
+    background: linear-gradient(20deg, rgb(168, 212, 79), rgb(39, 165, 39));
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 100vh;
+}
+.footer a{
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+
+}
+/***************************slider animation*************/
+
+.content{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-wrapper{
+    margin-top: 50px;
+    font-size: 20px;
+    top:100px;
+    color: #aaa;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-wrapper h1{
+    color: white;
+}
+.slider{
+    height: 50px;
+    margin-left: 10px;
+    z-index: -1;
+    overflow: hidden;
+}
+.slider div:nth-child(odd){
+    background: #2fe957;
+    padding: 8px 15px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.slider div:nth-child(even){
+    background: yellowgreen;
+    padding: 8px 15px;
+    text-align: center;
+    align-items: center;
+    color:chocolate;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.slider-text1 {
+    
+}
+.slider div{
+    animation: slide 16s linear infinite;
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateY(0%);
+    }
+    3.33% {
+        transform: translateY(0%);
+    }
+    6.66% {
+        transform: translateY(-130%);
+    }
+    15% {
+        transform: translateY(-130%);
+    }
+    20.33% {
+        transform: translateY(-290%);
+    }
+    24.33% {
+        transform: translateY(-290%);
+    }
+    28.33% {
+        transform: translateY(-450%);
+    }
+    32.33% {
+        transform: translateY(-450%);
+    }
+    36.55% {
+        transform: translateY(-580%);
+    }
+    40% {
+        transform: translateY(-580%);
+    }
+    44.33% {
+        transform: translateY(-750%);
+    }
+    48.66% {
+        transform: translateY(-750%);
+    }
+    52.33% {
+        transform: translateY(-890%);
+    }
+    56.66% {
+        transform: translateY(-890%);
+    }
+    60.33% {
+        transform: translateY(-1040%);
+    }
+    64.66% {
+        transform: translateY(-1040%);
+    }
+    68.33% {
+        transform: translateY(-1190%);
+    }
+    72.66% {
+        transform: translateY(-1190%);
+    }
+    76.33% {
+        transform: translateY(-1330%);
+    }
+    80.66% {
+        transform: translateY(-1330%);
+    }
+    84.33% {
+        transform: translateY(-1460%);
+    }
+    88.66% {
+        transform: translateY(-1460%);
+    }
+    92.33% {
+        transform: translateY(-1620%);
+    }
+    100% {
+        transform: translateY(-1620%);
+    }
+}
